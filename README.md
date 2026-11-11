@@ -16,6 +16,19 @@ Simple Run:
 python cr_temptint.py colorbox.jpg colorbox_out.png -100 0
 ```
 
+<table style="padding:10px">
+  <tr>
+    <td>GIMP</td>
+    <td>Camera Raw</td>
+    <td>This Algorithm</td>
+  </tr>
+  <tr>
+    <td> <img src="colorbox_GIMP.png"  alt="1" width = 279px height = 496px ></td>
+    <td> <img src="colorbox_CameraRaw.jpg"  alt="1" width = 279px height = 496px ></td>
+    <td> <img src="colorbox_out.png"  alt="1" width = 279px height = 496px ></td>
+  </tr>
+</table>
+
 
 ## 1. Key Finding: Sliders → White Point
 
