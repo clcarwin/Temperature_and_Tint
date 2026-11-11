@@ -3,19 +3,6 @@
 This task use more than **5_000_000_000** tokens.
 The complete pixel-processing algorithm for Temperature / Tint adjustments has been reverse-engineered from Photoshop Camera Raw 7.0 (CS6).
 
-| File | Description |
-|---|---|
-| `cr_temptint.h` | Core algorithm (C++17, no third-party dependencies) |
-| `temptint.cpp` | Command-line tool: `params` / `apply` / `compare` / `validate` |
-| `cr_temptint.py` | NumPy reference implementation of the same algorithm, for readability and line-by-line comparison |
-| `tone_tables.h` | Two 1025-entry RGBTone tables extracted from the plugin |
-| `build.bat` | VS2017 build script (`cl /O2`) |
-
-Simple Run:
-```
-python cr_temptint.py colorbox.jpg colorbox_out.png -100 0
-```
-
 <table style="padding:10px">
   <tr>
     <td>GIMP</td>
@@ -29,6 +16,18 @@ python cr_temptint.py colorbox.jpg colorbox_out.png -100 0
   </tr>
 </table>
 
+| File | Description |
+|---|---|
+| `cr_temptint.h` | Core algorithm (C++17, no third-party dependencies) |
+| `temptint.cpp` | Command-line tool: `params` / `apply` / `compare` / `validate` |
+| `cr_temptint.py` | NumPy reference implementation of the same algorithm, for readability and line-by-line comparison |
+| `tone_tables.h` | Two 1025-entry RGBTone tables extracted from the plugin |
+| `build.bat` | VS2017 build script (`cl /O2`) |
+
+Simple Run:
+```
+python cr_temptint.py colorbox.jpg colorbox_out.png -100 0
+```
 
 ## 1. Key Finding: Sliders → White Point
 
